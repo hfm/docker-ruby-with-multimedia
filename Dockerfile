@@ -1,4 +1,4 @@
-FROM ruby:2.5.1
+FROM ruby:2.5.3
 
 RUN echo 'deb http://www.deb-multimedia.org stretch main non-free' >> /etc/apt/sources.list \
       && echo 'deb-src http://www.deb-multimedia.org stretch main non-free' >> /etc/apt/sources.list \
