@@ -1,7 +1,7 @@
 FROM ruby:2.7.0
 
-RUN echo 'deb http://www.deb-multimedia.org stretch main non-free' >> /etc/apt/sources.list \
-      && echo 'deb-src http://www.deb-multimedia.org stretch main non-free' >> /etc/apt/sources.list \
+RUN echo 'deb http://www.deb-multimedia.org buster main non-free' >> /etc/apt/sources.list \
+      && echo 'deb-src http://www.deb-multimedia.org buster main non-free' >> /etc/apt/sources.list \
       && apt-key adv --keyserver pgp.mit.edu --recv-keys 5C808C2B65558117 \
       && apt-get -qq update \
       && apt-get -qq -y --allow-unauthenticated install deb-multimedia-keyring \
